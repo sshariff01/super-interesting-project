@@ -13,11 +13,9 @@ class StandupJob
   private
 
   def request
-    @request ||= begin
-      request = Net::HTTP::Get.new(uri)
-      request['Authorization'] = 'Bearer ya29.GlusBIfSKOrBvMkJ0yEL05oJaK4jQGOZNl3Af564jcVAI-CE2dxaK9rYCA1LB1fu29L2k7Hsc9VUF4ToE-hOFVq0QfTht0vbjA6Kn1ETHg75Qd49FNvs4tqNirk5'
-      request
-    end
+    request = Net::HTTP::Get.new(uri)
+    request['Authorization'] = 'Bearer ya29.GlusBIfSKOrBvMkJ0yEL05oJaK4jQGOZNl3Af564jcVAI-CE2dxaK9rYCA1LB1fu29L2k7Hsc9VUF4ToE-hOFVq0QfTht0vbjA6Kn1ETHg75Qd49FNvs4tqNirk5'
+    request
   end
 
   def http_client
@@ -35,3 +33,11 @@ class StandupJob
   end
 
 end
+
+__END__
+
+https://www.googleapis.com/gmail/v1/users/shoabeshariff@gmail.com/messages/15df90e02e17733a?format=full
+https://www.googleapis.com/gmail/v1/users/shoabeshariff@gmail.com/messages/15df90e3e21d178c?format=full
+https://www.googleapis.com/gmail/v1/users/shoabeshariff@gmail.com/messages/15df90e6e6450867?format=full
+
+
