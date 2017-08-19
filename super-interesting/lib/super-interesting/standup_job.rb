@@ -1,7 +1,7 @@
 require 'net/http'
 require 'json'
 
-class GetAllInterestingsUseCase
+class StandupJob
 
   def get_todays_standup_messages
     response = http_client.start do |http|

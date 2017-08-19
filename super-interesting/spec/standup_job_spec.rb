@@ -3,12 +3,12 @@ require "ostruct"
 
 require_relative "spec_helper"
 
-describe 'GetAllInterestingsUseCase' do
+describe 'StandupJob' do
   let (:get_standup_messages_response) { 
     OpenStruct.new(body: File.read(fixture_path('list_today_interestings_response.json'))) 
   }
 
-  subject { GetAllInterestingsUseCase.new }
+  subject { StandupJob.new }
 
   it "should get today's standup messages" do
     expect_any_instance_of(Net::HTTP).to receive(:request).and_return(get_standup_messages_response)
