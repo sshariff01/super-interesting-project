@@ -18,10 +18,8 @@ describe 'StandupJob' do
     expect(result['messages'].length).to eq(3)
   end
 
-  it "should get the contents of each email"
-
   it "should convert the message body of each email into a human readable format"
   
-  it "should filter out everything, except for the Interestings section, out of the message body"
+  it "return an aggregate of the 'Interestings' section across all the messages"
 
 end
