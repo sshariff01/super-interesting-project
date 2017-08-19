@@ -32,7 +32,7 @@ describe 'StandupJob' do
     expect(messages[2]['body']).not_to be_empty
   end
 
-  it "returns an aggregate of the 'Interestings' section across all the messages" do
+  it "parse out the 'Interestings' section for each messages" do
     messages = subject.run
     
     expect(messages.length).to eq(3)
