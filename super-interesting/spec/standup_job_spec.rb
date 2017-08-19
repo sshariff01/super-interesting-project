@@ -20,18 +20,21 @@ describe 'StandupJob' do
   subject { StandupJob.new }
 
   it "should get today's standup messages" do
-    allow_any_instance_of(Net::HTTP)
+    expect_any_instance_of(Net::HTTP)
       .to receive(:request)
       .and_return(
         get_standup_messages_response,
-#         standup_message_1_response,
-#         standup_message_2_response,
-#         standup_message_3_response
+        standup_message_1_response,
+        standup_message_2_response,
+        standup_message_3_response
       )
 
-    result = subject.get_todays_standup_messages
+    messages = subject.get_todays_standup_messages
 
-    expect(result['messages'].length).to eq(3)
+    expect(messages.length).to eq(3)
+    expect(messages[0]['body']).not_to be_empty
+    expect(messages[1]['body']).not_to be_empty
+    expect(messages[2]['body']).not_to be_empty
   end
 
   it "should convert the message body of each email into a human readable format"
