@@ -3,6 +3,19 @@ require "json"
 require "base64"
 
 class StandupJob
+  
+  def run
+    messages = get_todays_standup_messages
+    decode(messages)
+    parse_interestings_from(messages)
+    messages
+  end
+  
+  def parse_interestings_from(messages)
+    messages.each do |message|
+      message['body'] = message['body'][/(\<h2\>Interestings\<\/h2\>[\S\s]*?)(\<h2\>Events\<\/h2\>|----------)/, 1].strip
+    end
+  end
 
   def get_todays_standup_messages
     response = http_client(list_messages_uri).start do |http|
