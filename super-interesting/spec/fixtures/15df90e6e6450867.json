@@ -1,0 +1,162 @@
+{
+ "id": "15df90e6e6450867",
+ "threadId": "15df90e6e6450867",
+ "labelIds": [
+  "CATEGORY_PERSONAL",
+  "INBOX"
+ ],
+ "snippet": "Helps New Standup Hosts (Mark) Interestings Twitter to live stream eclipse David is leaving us.... Events Aug 22: Pivotal Town Hall Aug 24: Go-Karting (Sarge) Aug 31: GemFire 8.0 - End of General",
+ "historyId": "7532569",
+ "internalDate": "1503122018000",
+ "payload": {
+  "partId": "",
+  "mimeType": "multipart/alternative",
+  "filename": "",
+  "headers": [
+   {
+    "name": "Delivered-To",
+    "value": "shoabe.shariff@gmail.com"
+   },
+   {
+    "name": "Received",
+    "value": "by 10.202.86.82 with SMTP id k79csp1024343oib;        Fri, 18 Aug 2017 22:54:19 -0700 (PDT)"
+   },
+   {
+    "name": "X-Received",
+    "value": "by 10.202.4.208 with SMTP id 199mr13758902oie.182.1503122059167;        Fri, 18 Aug 2017 22:54:19 -0700 (PDT)"
+   },
+   {
+    "name": "ARC-Seal",
+    "value": "i=1; a=rsa-sha256; t=1503122059; cv=none;        d=google.com; s=arc-20160816;        b=m/5LfTyFWKhz80K2039fFxTPgmP2k47phsxwOThcjC6wXsEDl6aRtjuU8KO2+BrRqe         0o2I7SotqFp7rDZmzB+J7ke1cjYqPTxuMGRgPOy865dbODE3D4P5RK8L7On55mnFjWqk         rcgWRX9I7zfc5KbhV8OYTIiLVQQu37BpRZUz/Jtc0Mj0ww1miBwCLgr9Q9ERhF5nPeKL         +6tcH9kB6Md43yY51NmdVUBpzDkRQaDfCw8c9zYQJNNjW3jrWSyZloapTwpk5LLZZacS         xNh6gUwijgLRwz3g0/WSeLzfkmc0wrUcS+M/7nuMFhIjN85KpRW7lmVeDJRCpfZ4mnOd         cSZQ=="
+   },
+   {
+    "name": "ARC-Message-Signature",
+    "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;        h=to:subject:message-id:date:from:references:in-reply-to:mime-version         :dkim-signature:arc-authentication-results;        bh=2fpJdYIjMZO3qTFqYk5sOgW9gS7GglBGs8c193d0Gow=;        b=GcCoaw0h2mQEqduTcuQtbFeOkbErqOYGm9q+Aq0usZ6Dax7d7NKQoGHoGonfT/2s5G         s7WgYQQYxNaFl0FJGQ/h6xICoCFNxlzJgtjXpNEmsovj5xnTcMgW5y+GodPtxyzutnlQ         UtHQFFXBuFyEeewhXsPCPsWmPteyytZEPnmLB8Xr9/zjEO6BZeKRU95pP46vcNt06Ic0         hdykNyLEn9cCcSUomU8u4nlBDWm8DLr8VXZN44/E8SksdyWtwxu27xowMEvkDcvuvMmo         9cTirwxl/Flp1KUm7viVq3Q6MaJI1h5q05daBPLqzRGIorupuNa3f122CmhyriQH6w6W         0dsw=="
+   },
+   {
+    "name": "ARC-Authentication-Results",
+    "value": "i=1; mx.google.com;       dkim=pass header.i=@pivotal-io.20150623.gappssmtp.com header.s=20150623 header.b=CuLQyEA8;       spf=pass (google.com: domain of sshariff@pivotal.io designates 2607:f8b0:4003:c06::22c as permitted sender) smtp.mailfrom=sshariff@pivotal.io;       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=pivotal.io"
+   },
+   {
+    "name": "Return-Path",
+    "value": "\u003csshariff@pivotal.io\u003e"
+   },
+   {
+    "name": "Received",
+    "value": "from mail-oi0-x22c.google.com (mail-oi0-x22c.google.com. [2607:f8b0:4003:c06::22c])        by mx.google.com with ESMTPS id k130si947470oif.475.2017.08.18.22.54.19        for \u003cshoabe.shariff@gmail.com\u003e        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);        Fri, 18 Aug 2017 22:54:19 -0700 (PDT)"
+   },
+   {
+    "name": "Received-SPF",
+    "value": "pass (google.com: domain of sshariff@pivotal.io designates 2607:f8b0:4003:c06::22c as permitted sender) client-ip=2607:f8b0:4003:c06::22c;"
+   },
+   {
+    "name": "Authentication-Results",
+    "value": "mx.google.com;       dkim=pass header.i=@pivotal-io.20150623.gappssmtp.com header.s=20150623 header.b=CuLQyEA8;       spf=pass (google.com: domain of sshariff@pivotal.io designates 2607:f8b0:4003:c06::22c as permitted sender) smtp.mailfrom=sshariff@pivotal.io;       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=pivotal.io"
+   },
+   {
+    "name": "Received",
+    "value": "by mail-oi0-x22c.google.com with SMTP id g131so80827574oic.3        for \u003cshoabe.shariff@gmail.com\u003e; Fri, 18 Aug 2017 22:54:19 -0700 (PDT)"
+   },
+   {
+    "name": "DKIM-Signature",
+    "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=pivotal-io.20150623.gappssmtp.com; s=20150623;        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;        bh=2fpJdYIjMZO3qTFqYk5sOgW9gS7GglBGs8c193d0Gow=;        b=CuLQyEA8axdYXqQSq/C2Mo9T9h0yBMGaDdyGNk82BKdLVqQ5BnC2UWU9cRltiysxMZ         JWBzoQLWt2mcGdRGCQYi+UtxTGtch/IP57Z4v/mnqp4h0XgkoJNTdLvyQ7+mgA+jU7rT         ZxL6rihkfmR7ax++Dyk0Rlgf33ZWnqMnMlZ/tgra8kOouCwxwr2mWo0+vkZ6RFljjVlQ         A4V9KGO9DktUr5ZiKdD7cZGBPlsNaEoV7QM5YeuG7l1mCxzygBywPWeT6UOUpboyVCJ8         PNhm3K2JAkMZCxacvu8d6pfcrOCi4EyMg/b8sF/QPHLCsCZ25zbpgVseMBOXYZj9IFxq         7wLw=="
+   },
+   {
+    "name": "X-Google-DKIM-Signature",
+    "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20161025;        h=x-gm-message-state:mime-version:in-reply-to:references:from:date         :message-id:subject:to;        bh=2fpJdYIjMZO3qTFqYk5sOgW9gS7GglBGs8c193d0Gow=;        b=gC6xNb7XW5/SIs7QCz1ewjygv9xchmqVGHZYNzi76KEUveeob68/GAnJfHikNyIMaM         INm6Oax2ca2F04FoVxfvLNSJ7XGJS+9rWo+oOLSEx0ibhALs9wrGOmNJ1VHdy9Lf8oCt         z63skzNlj4fFWnazOjYT6gCOiZhe2kcaHAN/xttT5wKZNRYTXINX4qQyM5mDSwWXyfM7         2SRUoELThf5Cz+8Uh6BL4IEIdlCPC7RQbdovHyyqpE/s76mDEhoKUszMo5JH5ASsCQG8         QSTFueDkJdUzDCya8TpbeUryOMjdxFMV/KfQyZo74Qv5TCLkYvUeCVBBau7+FK2qAuIA         BXiA=="
+   },
+   {
+    "name": "X-Gm-Message-State",
+    "value": "AHYfb5iUrUlOOjl0lmXBgQv54eMdYosmtqIj3r4smf4a58fOj54r2f62 1pApDABctJ6XKkBwZEL9Nk7rAyJcFKSPWQE="
+   },
+   {
+    "name": "X-Received",
+    "value": "by 10.202.242.2 with SMTP id q2mr13729671oih.71.1503122058622; Fri, 18 Aug 2017 22:54:18 -0700 (PDT)"
+   },
+   {
+    "name": "MIME-Version",
+    "value": "1.0"
+   },
+   {
+    "name": "Received",
+    "value": "by 10.58.0.47 with HTTP; Fri, 18 Aug 2017 22:53:38 -0700 (PDT)"
+   },
+   {
+    "name": "In-Reply-To",
+    "value": "\u003c599712c599844_482ade9418d114965a9@438ae2cc-d86a-41a6-7135-6f60.mail\u003e"
+   },
+   {
+    "name": "References",
+    "value": "\u003c599712c599844_482ade9418d114965a9@438ae2cc-d86a-41a6-7135-6f60.mail\u003e"
+   },
+   {
+    "name": "From",
+    "value": "Shoabe Shariff \u003csshariff@pivotal.io\u003e"
+   },
+   {
+    "name": "Date",
+    "value": "Fri, 18 Aug 2017 22:53:38 -0700"
+   },
+   {
+    "name": "Message-ID",
+    "value": "\u003cCAOvFxGoVcg7jNir96viDPagRzGmnc6mX+wNkP5JJ_d-s0Ec+Yw@mail.gmail.com\u003e"
+   },
+   {
+    "name": "Subject",
+    "value": "Fwd: [Standup][Beaverton] 08/18/17: Beaverton standup"
+   },
+   {
+    "name": "To",
+    "value": "Shoabe Shariff \u003cshoabe.shariff@gmail.com\u003e"
+   },
+   {
+    "name": "Content-Type",
+    "value": "multipart/alternative; boundary=\"94eb2c09532e5c46fe055714e0f8\""
+   }
+  ],
+  "body": {
+   "size": 0
+  },
+  "parts": [
+   {
+    "partId": "0",
+    "mimeType": "text/plain",
+    "filename": "",
+    "headers": [
+     {
+      "name": "Content-Type",
+      "value": "text/plain; charset=\"UTF-8\""
+     },
+     {
+      "name": "Content-Transfer-Encoding",
+      "value": "quoted-printable"
+     }
+    ],
+    "body": {
+     "size": 1351,
+     "data": "SGVscHMgTmV3IFN0YW5kdXAgSG9zdHMNCg0KKE1hcmspDQpJbnRlcmVzdGluZ3MgVHdpdHRlciB0byBsaXZlIHN0cmVhbSBlY2xpcHNlIERhdmlkIGlzIGxlYXZpbmcgdXMuLi4uIEV2ZW50cyBBdWcNCjIyOiBQaXZvdGFsIFRvd24gSGFsbCBBdWcgMjQ6IEdvLUthcnRpbmcNCg0KKFNhcmdlKQ0KQXVnIDMxOiBHZW1GaXJlIDguMCAtIEVuZCBvZiBHZW5lcmFsIFN1cHBvcnQNCg0KaHR0cHM6Ly9kMWZ0bzM1Z2NmZmZ6bi5jbG91ZGZyb250Lm5ldC9zdXBwb3J0L1Bpdm90YWxMaWZlY3ljbGVNYXRyaXgucGRmDQo8aHR0cHM6Ly91MzQ1NzYyNC5jdC5zZW5kZ3JpZC5uZXQvd2YvY2xpY2s_dXBuPXBxdk9TNVhLaEVTMWM5RFFEYktuQmFSY1hHQTVweWZvbHQ2TVUxQm11LTJGcUhvLTJGckRQbkw3bDJENzI4VnV2V1pwMmxJZk41QW9HWWRCN1l0MUtwVVR1QmItMkZIWTltLTJGWTJLb2ZtSzJYR2s2U2stM0RfYUNvSVY3Qlpab2xCVWpON2EtMkJISjFiOXItMkJwblFNSEdXMFJ4WlduOXJiTVNUaTZFM1NkcDFtRXpnbVVVaDRSa2J4eG5sYUpVOHl2SmlvSnJlWUtGVTRxWjZ3dGhEWmZ2V1VnVXE4MVllY2pGSHMzbjJMcWNTTDZOdGRrS2dLQWZYNmNnY2dwa0VpVUk1aUlZems0UHVHTnFYNjJhWVk3aUw5dlFEdWRuejdTSFRTSXdIeXFMWG9kTnlsWjhnN2NGb0d1dS0yQkdCODNJZjFmV1E0eGFtU05xRGhrOW0zVUttbDVNQ2FmR3dwZWFBSS0zRD4NCkF1ZyAzMTogR2VtRmlyZSA4LjEgLSBFbmQgb2YgR2VuZXJhbCBTdXBwb3J0DQoNCmh0dHBzOi8vZDFmdG8zNWdjZmZmem4uY2xvdWRmcm9udC5uZXQvc3VwcG9ydC9QaXZvdGFsTGlmZWN5Y2xlTWF0cml4LnBkZg0KPGh0dHBzOi8vdTM0NTc2MjQuY3Quc2VuZGdyaWQubmV0L3dmL2NsaWNrP3Vwbj1wcXZPUzVYS2hFUzFjOURRRGJLbkJhUmNYR0E1cHlmb2x0Nk1VMUJtdS0yRnFIby0yRnJEUG5MN2wyRDcyOFZ1dldacDJsSWZONUFvR1lkQjdZdDFLcFVUdUJiLTJGSFk5bS0yRlkyS29mbUsyWEdrNlNrLTNEX2FDb0lWN0JaWm9sQlVqTjdhLTJCSEoxYjlyLTJCcG5RTUhHVzBSeFpXbjlyYk1TVGk2RTNTZHAxbUV6Z21VVWg0UmtieHhubGFKVTh5dkppb0pyZVlLRlU0alM2NzNnR0dONmJIM1p3Q2N0SDdBUzhsRHBReHRCVFJBSVZ4eGtETE10d3BjRjBUV3lkTlB3ZU5aMjZkaFRGWmRONmktMkZIWEFoVWU0T3lxam03NU9pM0NjSjN1dUpqLTJCLTJGZDJZd0FXdTg1ZkFpLTJGekJkcEtCQjE0bzdkMk50VGNOQzVjbGtjTi0yQjJmNHBjNmFQWEo0OHlRUS0zRD4NCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSBUaGlzIHN0YW5kdXAgc3RhcnRzIGF0DQpodHRwOi8vd2hpdGVib2FyZC5waXZvdGFsbGFicy5jb20vc3RhbmR1cHMvMjUvaXRlbXMNCg=="
+    }
+   },
+   {
+    "partId": "1",
+    "mimeType": "text/html",
+    "filename": "",
+    "headers": [
+     {
+      "name": "Content-Type",
+      "value": "text/html; charset=\"UTF-8\""
+     },
+     {
+      "name": "Content-Transfer-Encoding",
+      "value": "quoted-printable"
+     }
+    ],
+    "body": {
+     "size": 2333,
+     "data": "PGRpdiBkaXI9Imx0ciI-PGRpdiBjbGFzcz0iZ21haWxfcXVvdGUiPjxoMj5IZWxwczwvaDI-DQoNCjxoMz5OZXcgU3RhbmR1cCBIb3N0czwvaDM-DQoNCjxwPihNYXJrKTwvcD4NCg0KPGgyPkludGVyZXN0aW5nczwvaDI-DQoNCjxoMz5Ud2l0dGVyIHRvIGxpdmUgc3RyZWFtIGVjbGlwc2U8L2gzPg0KDQo8aDM-RGF2aWQgaXMgbGVhdmluZyB1cy4uLi48L2gzPg0KDQo8aDI-RXZlbnRzPC9oMj4NCg0KPGgzPkF1ZyAyMjogUGl2b3RhbCBUb3duIEhhbGw8L2gzPg0KDQo8aDM-QXVnIDI0OiBHby1LYXJ0aW5nPC9oMz4NCg0KPHA-KFNhcmdlKTwvcD4NCg0KPGgzPkF1ZyAzMTogR2VtRmlyZSA4LjAgLSBFbmQgb2YgR2VuZXJhbCBTdXBwb3J0PC9oMz4NCg0KPHA-PGEgaHJlZj0iaHR0cHM6Ly91MzQ1NzYyNC5jdC5zZW5kZ3JpZC5uZXQvd2YvY2xpY2s_dXBuPXBxdk9TNVhLaEVTMWM5RFFEYktuQmFSY1hHQTVweWZvbHQ2TVUxQm11LTJGcUhvLTJGckRQbkw3bDJENzI4VnV2V1pwMmxJZk41QW9HWWRCN1l0MUtwVVR1QmItMkZIWTltLTJGWTJLb2ZtSzJYR2s2U2stM0RfYUNvSVY3Qlpab2xCVWpON2EtMkJISjFiOXItMkJwblFNSEdXMFJ4WlduOXJiTVNUaTZFM1NkcDFtRXpnbVVVaDRSa2J4eG5sYUpVOHl2SmlvSnJlWUtGVTRxWjZ3dGhEWmZ2V1VnVXE4MVllY2pGSHMzbjJMcWNTTDZOdGRrS2dLQWZYNmNnY2dwa0VpVUk1aUlZems0UHVHTnFYNjJhWVk3aUw5dlFEdWRuejdTSFRTSXdIeXFMWG9kTnlsWjhnN2NGb0d1dS0yQkdCODNJZjFmV1E0eGFtU05xRGhrOW0zVUttbDVNQ2FmR3dwZWFBSS0zRCIgdGFyZ2V0PSJfYmxhbmsiPmh0dHBzOi8vZDFmdG8zNWdjZmZmem4uPHdicj5jbG91ZGZyb250Lm5ldC9zdXBwb3J0Lzx3YnI-UGl2b3RhbExpZmVjeWNsZU1hdHJpeC5wZGY8L2E-PC9wPg0KDQo8aDM-QXVnIDMxOiBHZW1GaXJlIDguMSAtIEVuZCBvZiBHZW5lcmFsIFN1cHBvcnQ8L2gzPg0KDQo8cD48YSBocmVmPSJodHRwczovL3UzNDU3NjI0LmN0LnNlbmRncmlkLm5ldC93Zi9jbGljaz91cG49cHF2T1M1WEtoRVMxYzlEUURiS25CYVJjWEdBNXB5Zm9sdDZNVTFCbXUtMkZxSG8tMkZyRFBuTDdsMkQ3MjhWdXZXWnAybElmTjVBb0dZZEI3WXQxS3BVVHVCYi0yRkhZOW0tMkZZMktvZm1LMlhHazZTay0zRF9hQ29JVjdCWlpvbEJVak43YS0yQkhKMWI5ci0yQnBuUU1IR1cwUnhaV245cmJNU1RpNkUzU2RwMW1FemdtVVVoNFJrYnh4bmxhSlU4eXZKaW9KcmVZS0ZVNGpTNjczZ0dHTjZiSDNad0NjdEg3QVM4bERwUXh0QlRSQUlWeHhrRExNdHdwY0YwVFd5ZE5Qd2VOWjI2ZGhURlpkTjZpLTJGSFhBaFVlNE95cWptNzVPaTNDY0ozdXVKai0yQi0yRmQyWXdBV3U4NWZBaS0yRnpCZHBLQkIxNG83ZDJOdFRjTkM1Y2xrY04tMkIyZjRwYzZhUFhKNDh5UVEtM0QiIHRhcmdldD0iX2JsYW5rIj5odHRwczovL2QxZnRvMzVnY2ZmZnpuLjx3YnI-Y2xvdWRmcm9udC5uZXQvc3VwcG9ydC88d2JyPlBpdm90YWxMaWZlY3ljbGVNYXRyaXgucGRmPC9hPjwvcD4NCg0KLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQpUaGlzIHN0YW5kdXAgc3RhcnRzIGF0IDxhIGhyZWY9Imh0dHA6Ly93aGl0ZWJvYXJkLnBpdm90YWxsYWJzLmNvbS9zdGFuZHVwcy8yNS9pdGVtcyIgdGFyZ2V0PSJfYmxhbmsiPmh0dHA6Ly93aGl0ZWJvYXJkLnBpdm90YWxsYWJzLjx3YnI-Y29tL3N0YW5kdXBzLzI1L2l0ZW1zPC9hPg0KPGltZyBzcmM9Imh0dHBzOi8vdTM0NTc2MjQuY3Quc2VuZGdyaWQubmV0L3dmL29wZW4_dXBuPWFDb0lWN0JaWm9sQlVqTjdhLTJCSEoxYjlyLTJCcG5RTUhHVzBSeFpXbjlyYk1TVGk2RTNTZHAxbUV6Z21VVWg0UmtieHhubGFKVTh5dkppb0pyZVlLRlU0cEtGWjQ0UlJyRjlXcWFUT0s1MnNZaDFoanZ2SUU3NnhnYlN4ZDZQMlZtN1E5d1NySU5LTjBWenB3STdHMXU5aUp2M1FIamZiMGN5c3RDV21idUVlUjBzZHJxQk5OWXBQbmhSU2ZZdUJhT2xUS3JGMVQtMkJ6OWtzWVlIRzlSc3U4UUYtMkJYZ1A3cU5BeDdwamlJMHZjU3RoYy0zRCIgYWx0PSIiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGJvcmRlcj0iMCIgc3R5bGU9ImhlaWdodDoxcHghaW1wb3J0YW50O3dpZHRoOjFweCFpbXBvcnRhbnQ7Ym9yZGVyLXdpZHRoOjAhaW1wb3J0YW50O21hcmdpbi10b3A6MCFpbXBvcnRhbnQ7bWFyZ2luLWJvdHRvbTowIWltcG9ydGFudDttYXJnaW4tcmlnaHQ6MCFpbXBvcnRhbnQ7bWFyZ2luLWxlZnQ6MCFpbXBvcnRhbnQ7cGFkZGluZy10b3A6MCFpbXBvcnRhbnQ7cGFkZGluZy1ib3R0b206MCFpbXBvcnRhbnQ7cGFkZGluZy1yaWdodDowIWltcG9ydGFudDtwYWRkaW5nLWxlZnQ6MCFpbXBvcnRhbnQiPg0KDQo8L2Rpdj48YnI-PC9kaXY-DQo="
+    }
+   }
+  ]
+ },
+ "sizeEstimate": 9167
+}

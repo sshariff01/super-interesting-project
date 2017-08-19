@@ -1,0 +1,162 @@
+{
+ "id": "15df90e02e17733a",
+ "threadId": "15df90e02e17733a",
+ "labelIds": [
+  "CATEGORY_PERSONAL",
+  "INBOX"
+ ],
+ "snippet": "Helps Looking for a pair for Core Practice talk next week (Inna) We are planning to have a core practice talk on Feedback next Wednesday. I am looking for someone to pair with. How would you feel if",
+ "historyId": "7532700",
+ "internalDate": "1503121989000",
+ "payload": {
+  "partId": "",
+  "mimeType": "multipart/alternative",
+  "filename": "",
+  "headers": [
+   {
+    "name": "Delivered-To",
+    "value": "shoabe.shariff@gmail.com"
+   },
+   {
+    "name": "Received",
+    "value": "by 10.202.86.82 with SMTP id k79csp1024151oib;        Fri, 18 Aug 2017 22:53:51 -0700 (PDT)"
+   },
+   {
+    "name": "X-Received",
+    "value": "by 10.202.214.20 with SMTP id n20mr4366495oig.48.1503122031810;        Fri, 18 Aug 2017 22:53:51 -0700 (PDT)"
+   },
+   {
+    "name": "ARC-Seal",
+    "value": "i=1; a=rsa-sha256; t=1503122031; cv=none;        d=google.com; s=arc-20160816;        b=NU+sRjyRca5rL6HWuZHPNabTTxpvbu1erPQOZgg7SeTO0ZHaa5ce/Nt416OZDwkjZa         XeXOpgE3eYswWEnO+fasHEvVBgZqhhcC8I6COgQkAMl6YJC/QjZ1Wo4a8Q7fLBhQFCx+         7SXOTiLsFV7XYPJNitRnjb8t8/RPakAXGMBYIbLYPJaYgJTeZKY/XUQ3J2SBhB9/oV90         uDRNlVt6Nkzqyh9s4hGsGYsBror8EMcKzHKfXmf1KNz607DrxpSX5H3xTRBZv+FT9/QF         0a1uPFHUgL9gjvX/P9/ghUh7PKrL37zN48OJIrVMHJ/j16XLtUzwPrR/SVIW/P3YMw6O         Iv0Q=="
+   },
+   {
+    "name": "ARC-Message-Signature",
+    "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;        h=to:subject:message-id:date:from:references:in-reply-to:mime-version         :dkim-signature:arc-authentication-results;        bh=q6LT8xdoXUnhzux53UlCt+7Wdb0w7IMFKcUf8pNpfZU=;        b=f7xnzf8UeDKKnFLE64of1O5TOrHdXKSHEi1rTYvDxLpObzyNR9tSzK+U6BMODqfnca         /Ulf47xTNPW2Kkav9DOHFaw4iKZipHt75z/mYK4x8/4ibaia1EyH62QM33+0S7bqt1Q2         Utd9z7wgDxm1Ju23ZEMqYXG4QxzEiih3uHh/vE/C7Ozg5VJXvR9FH/rLmYZFJL/M1caN         cvhhLUETwAiMwiEKnJSy36USoDURlnDFlxPp/4M9WMT5cQJz+5gWaq0VG+iY8f0S7F5T         G4hMsBxBGMKsd+aFE7Zpfvf53r3hmEiXdKQLvGLp7lsa+p2h9D2Xuw3FJxb59FOqKwJP         oHxA=="
+   },
+   {
+    "name": "ARC-Authentication-Results",
+    "value": "i=1; mx.google.com;       dkim=pass header.i=@pivotal-io.20150623.gappssmtp.com header.s=20150623 header.b=R59iAI9W;       spf=pass (google.com: domain of sshariff@pivotal.io designates 2607:f8b0:4003:c06::235 as permitted sender) smtp.mailfrom=sshariff@pivotal.io;       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=pivotal.io"
+   },
+   {
+    "name": "Return-Path",
+    "value": "\u003csshariff@pivotal.io\u003e"
+   },
+   {
+    "name": "Received",
+    "value": "from mail-oi0-x235.google.com (mail-oi0-x235.google.com. [2607:f8b0:4003:c06::235])        by mx.google.com with ESMTPS id n9si3417719oia.113.2017.08.18.22.53.50        for \u003cshoabe.shariff@gmail.com\u003e        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);        Fri, 18 Aug 2017 22:53:51 -0700 (PDT)"
+   },
+   {
+    "name": "Received-SPF",
+    "value": "pass (google.com: domain of sshariff@pivotal.io designates 2607:f8b0:4003:c06::235 as permitted sender) client-ip=2607:f8b0:4003:c06::235;"
+   },
+   {
+    "name": "Authentication-Results",
+    "value": "mx.google.com;       dkim=pass header.i=@pivotal-io.20150623.gappssmtp.com header.s=20150623 header.b=R59iAI9W;       spf=pass (google.com: domain of sshariff@pivotal.io designates 2607:f8b0:4003:c06::235 as permitted sender) smtp.mailfrom=sshariff@pivotal.io;       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=pivotal.io"
+   },
+   {
+    "name": "Received",
+    "value": "by mail-oi0-x235.google.com with SMTP id f11so82013840oic.0        for \u003cshoabe.shariff@gmail.com\u003e; Fri, 18 Aug 2017 22:53:50 -0700 (PDT)"
+   },
+   {
+    "name": "DKIM-Signature",
+    "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=pivotal-io.20150623.gappssmtp.com; s=20150623;        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;        bh=q6LT8xdoXUnhzux53UlCt+7Wdb0w7IMFKcUf8pNpfZU=;        b=R59iAI9W9l8HJaUCReBVloz57Cpkplr59Ui9blTYU1MUF7fE1RInlFNp4UO5zRXmAO         Sw8OTC+MrtlPomiiWTzumoCnzQmRHwm8n9up2dlRDI5VYwtDJT3pwwOpIXtMkAH3bqGQ         MPQNqfK8HJ7Ad8uli4p9vEBpfiuKsXThJcEWUgt3iy7Ozp/FzPkyWSpaCf0dnEXqX8WX         kCWF1YlD7F3tzd+2inwv5fJdlPAAfZ3DE4RjyHQScSiW8qlzuS4VASCchdq9lvLTSO9b         NiZxyYtIcsASFM99AkuOHHxdyLB3SvX9uBJjHpaq2NdmxkoOEavQlao4iA6Jc0eyv+dP         rfVA=="
+   },
+   {
+    "name": "X-Google-DKIM-Signature",
+    "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20161025;        h=x-gm-message-state:mime-version:in-reply-to:references:from:date         :message-id:subject:to;        bh=q6LT8xdoXUnhzux53UlCt+7Wdb0w7IMFKcUf8pNpfZU=;        b=nP+ki6Tj2vXuqYtnkAD83F71ArnnNkHjRlZnZZKfsQDBbkgxHmQe2EHXs95VR+i1Wm         e+w+J4uR3qwldJ39mA8qTeuXEQsqpmAwyQ4ZsyZjWTuqPkzWbbsi5lBaxsbp0QIoyO3+         BqsRiohiyimpgauuUWJC8e/zXZDGTBDypxwDnxcQ3ZarRMLJNfZEERzGFXwZLiIvnk6S         lNmTxul7ERTVP+6P6F9MkxMlypvOahu19a4T2hlsLCE2Re0gF2coTKMoMQN3da8nysQa         r1XoOdSpPHN/ut+9RZ8nzJm2Ns85yjYoOCbczX4tNM49tITdwCYnIEZ4aedslRAlszEe         zYTw=="
+   },
+   {
+    "name": "X-Gm-Message-State",
+    "value": "AHYfb5hunxj6gImtp1Tn4r8BDnt4SS+DELrcfIwjQ7lHTTy+6MvX0YtW q4WrgHjRSqMeM/JIgOiCJSxEeBV98N7zzc8="
+   },
+   {
+    "name": "X-Received",
+    "value": "by 10.202.49.14 with SMTP id x14mr233649oix.172.1503122030417; Fri, 18 Aug 2017 22:53:50 -0700 (PDT)"
+   },
+   {
+    "name": "MIME-Version",
+    "value": "1.0"
+   },
+   {
+    "name": "Received",
+    "value": "by 10.58.0.47 with HTTP; Fri, 18 Aug 2017 22:53:09 -0700 (PDT)"
+   },
+   {
+    "name": "In-Reply-To",
+    "value": "\u003c59974f88600fd_482ade9418d1149739d@438ae2cc-d86a-41a6-7135-6f60.mail\u003e"
+   },
+   {
+    "name": "References",
+    "value": "\u003c59974f88600fd_482ade9418d1149739d@438ae2cc-d86a-41a6-7135-6f60.mail\u003e"
+   },
+   {
+    "name": "From",
+    "value": "Shoabe Shariff \u003csshariff@pivotal.io\u003e"
+   },
+   {
+    "name": "Date",
+    "value": "Fri, 18 Aug 2017 22:53:09 -0700"
+   },
+   {
+    "name": "Message-ID",
+    "value": "\u003cCAOvFxGrvTBtpvq_5SqULKSzDCGwweE=j-e_8G5r9fN_gw7B=cg@mail.gmail.com\u003e"
+   },
+   {
+    "name": "Subject",
+    "value": "Fwd: [Standup][SF] 08/18/17: Also free echo dots"
+   },
+   {
+    "name": "To",
+    "value": "Shoabe Shariff \u003cshoabe.shariff@gmail.com\u003e"
+   },
+   {
+    "name": "Content-Type",
+    "value": "multipart/alternative; boundary=\"001a113cc43ead790f055714de20\""
+   }
+  ],
+  "body": {
+   "size": 0
+  },
+  "parts": [
+   {
+    "partId": "0",
+    "mimeType": "text/plain",
+    "filename": "",
+    "headers": [
+     {
+      "name": "Content-Type",
+      "value": "text/plain; charset=\"UTF-8\""
+     },
+     {
+      "name": "Content-Transfer-Encoding",
+      "value": "quoted-printable"
+     }
+    ],
+    "body": {
+     "size": 1193,
+     "data": "SGVscHMgTG9va2luZyBmb3IgYSBwYWlyIGZvciBDb3JlIFByYWN0aWNlIHRhbGsgbmV4dCB3ZWVrDQoNCihJbm5hKQ0KDQpXZSBhcmUgcGxhbm5pbmcgdG8gaGF2ZSBhIGNvcmUgcHJhY3RpY2UgdGFsayBvbiBGZWVkYmFjayBuZXh0IFdlZG5lc2RheS4gSQ0KYW0gbG9va2luZyBmb3Igc29tZW9uZSB0byBwYWlyIHdpdGguDQpIb3cgd291bGQgeW91IGZlZWwgaWYgeW91IGNvdWxkIG5vIGxvbmdlciB1c2UgUG9zdGZhY3RvPw0KDQooUG9zdGZhY3RvIFRlYW0pDQoNCkxldCB1cyBrbm93IGhlcmU6IGh0dHBzOi8vZ29vLmdsL2Zvcm1zL0VsT0VIaXpoZmtaek44TEoyDQo8aHR0cHM6Ly91MzQ1NzYyNC5jdC5zZW5kZ3JpZC5uZXQvd2YvY2xpY2s_dXBuPXBxdk9TNVhLaEVTMWM5RFFEYktuQlpUOExRZm0wQjFqN3VXa1JUaVZDazFIZFBnenBaZjl6ckZjMExGVG1FT1lfYUNvSVY3Qlpab2xCVWpON2EtMkJISjFiOXItMkJwblFNSEdXMFJ4WlduOXJiTVRNb0V2Y08tMkJMTWQtMkJSOU5wVkoyV205MzZFRlRXVGN5VktvYjVPZWExYlF4WS0yRmZtSGdkSzRqMVcxdTFOSVEtMkJKV05Eb3pBTG1OMWlwcVc4QkZXMURFdFQ4OGt6eUZJRHRNNzU1dXJydmYyd1hVWVl5LTJGeTVRVzVjZC0yQlc0cFFXN0xwdGV2QXU4d0c5VEx5M3F2V3hJQXRSNnhPMEpBdDBmNUh5MEQtMkJjV2NJWk9pSUYxaVNuZlFLaWd3aXN3UnlEQ1hVUS0zRD4NCg0KKFRoZSBzdXJ2ZXkgdGFrZXMgfjMgbWlucyB0byBmaWxsIG91dC4pDQpJbnRlcmVzdGluZ3MgRXZlcnl0aGluZyBvbiBHb1Rvb2wgaXMgZnJlZSB0aGlzIHdlZWtlbmQhDQoNCihOYXRhc2hhKQ0KUmFkaW9MYWIncyBsYXN0IHR3byBlcGlzb2RlcyBhcmUgc3VwZXIgaW50ZXJlc3RpbmcNCg0KVGhlIGZpcnN0IGlzIGNhbGxlZCBUaGUgQ2VyZW1vbnksIGFuZCBpdCdzIG9uIGhhY2tlcnMnIGRpZ2l0YWwgY3VycmVuY3kgYW5kDQpwYXJhbm9pYS4gVGhlIG90aGVyIGlzIGNhbGxlZCBCcmVha2luZyBOZXdzLCBhbmQgaXQncyBsaWtlIFBob3Rvc2hvcCBmb3INCmF1ZGlvIGFuZCB2aWRlby4gSXQnbGwgZ3JvdyBpbmNyZWFzaW5nbHkgdXNlZnVsIGFuZCByZWxldmFudCBpbiB0aGUgZnV0dXJlIQ0KLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIFRoaXMgc3RhbmR1cCBzdGFydHMgYXQNCmh0dHA6Ly93aGl0ZWJvYXJkLnBpdm90YWxsYWJzLmNvbS9zdGFuZHVwcy8xL2l0ZW1zDQo="
+    }
+   },
+   {
+    "partId": "1",
+    "mimeType": "text/html",
+    "filename": "",
+    "headers": [
+     {
+      "name": "Content-Type",
+      "value": "text/html; charset=\"UTF-8\""
+     },
+     {
+      "name": "Content-Transfer-Encoding",
+      "value": "quoted-printable"
+     }
+    ],
+    "body": {
+     "size": 2130,
+     "data": "PGRpdiBkaXI9Imx0ciI-PGRpdiBjbGFzcz0iZ21haWxfcXVvdGUiPjxoMj5IZWxwczwvaDI-DQoNCjxoMz5Mb29raW5nIGZvciBhIHBhaXIgZm9yIENvcmUgUHJhY3RpY2UgdGFsayBuZXh0IHdlZWs8L2gzPg0KDQo8cD4oSW5uYSk8L3A-DQoNCjxwPldlIGFyZSBwbGFubmluZyB0byBoYXZlIGEgY29yZSBwcmFjdGljZSB0YWxrIG9uIEZlZWRiYWNrIG5leHQgV2VkbmVzZGF5LiBJIGFtIGxvb2tpbmcgZm9yIHNvbWVvbmUgdG8gcGFpciB3aXRoLiA8L3A-DQoNCjxoMz5Ib3cgd291bGQgeW91IGZlZWwgaWYgeW91IGNvdWxkIG5vIGxvbmdlciB1c2UgUG9zdGZhY3RvPzwvaDM-DQoNCjxwPihQb3N0ZmFjdG8gVGVhbSk8L3A-DQoNCjxwPkxldCB1cyBrbm93IGhlcmU6IDxhIGhyZWY9Imh0dHBzOi8vdTM0NTc2MjQuY3Quc2VuZGdyaWQubmV0L3dmL2NsaWNrP3Vwbj1wcXZPUzVYS2hFUzFjOURRRGJLbkJaVDhMUWZtMEIxajd1V2tSVGlWQ2sxSGRQZ3pwWmY5enJGYzBMRlRtRU9ZX2FDb0lWN0JaWm9sQlVqTjdhLTJCSEoxYjlyLTJCcG5RTUhHVzBSeFpXbjlyYk1UTW9FdmNPLTJCTE1kLTJCUjlOcFZKMldtOTM2RUZUV1RjeVZLb2I1T2VhMWJReFktMkZmbUhnZEs0ajFXMXUxTklRLTJCSldORG96QUxtTjFpcHFXOEJGVzFERXRUODhrenlGSUR0TTc1NXVycnZmMndYVVlZeS0yRnk1UVc1Y2QtMkJXNHBRVzdMcHRldkF1OHdHOVRMeTNxdld4SUF0UjZ4TzBKQXQwZjVIeTBELTJCY1djSVpPaUlGMWlTbmZRS2lnd2lzd1J5RENYVVEtM0QiIHRhcmdldD0iX2JsYW5rIj5odHRwczovL2dvby5nbC9mb3Jtcy88d2JyPkVsT0VIaXpoZmtaek44TEoyPC9hPjwvcD4NCg0KPHA-KFRoZSBzdXJ2ZXkgdGFrZXMgfjMgbWlucyB0byBmaWxsIG91dC4pPC9wPg0KDQo8aDI-SW50ZXJlc3RpbmdzPC9oMj4NCg0KPGgzPkV2ZXJ5dGhpbmcgb24gR29Ub29sIGlzIGZyZWUgdGhpcyB3ZWVrZW5kITwvaDM-DQoNCjxwPihOYXRhc2hhKTwvcD4NCg0KPGgzPlJhZGlvTGFiJiMzOTtzIGxhc3QgdHdvIGVwaXNvZGVzIGFyZSBzdXBlciBpbnRlcmVzdGluZzwvaDM-DQoNCjxwPlRoZSBmaXJzdCBpcyBjYWxsZWQgVGhlIENlcmVtb255LCBhbmQgaXQmIzM5O3Mgb24gaGFja2VycyYjMzk7IGRpZ2l0YWwgY3VycmVuY3kgYW5kIHBhcmFub2lhLiBUaGUgb3RoZXIgaXMgY2FsbGVkIEJyZWFraW5nIE5ld3MsIGFuZCBpdCYjMzk7cyBsaWtlIFBob3Rvc2hvcCBmb3IgYXVkaW8gYW5kIHZpZGVvLiBJdCYjMzk7bGwgZ3JvdyBpbmNyZWFzaW5nbHkgdXNlZnVsIGFuZCByZWxldmFudCBpbiB0aGUgZnV0dXJlITwvcD4NCg0KLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQpUaGlzIHN0YW5kdXAgc3RhcnRzIGF0IDxhIGhyZWY9Imh0dHA6Ly93aGl0ZWJvYXJkLnBpdm90YWxsYWJzLmNvbS9zdGFuZHVwcy8xL2l0ZW1zIiB0YXJnZXQ9Il9ibGFuayI-aHR0cDovL3doaXRlYm9hcmQucGl2b3RhbGxhYnMuPHdicj5jb20vc3RhbmR1cHMvMS9pdGVtczwvYT4NCjxpbWcgc3JjPSJodHRwczovL3UzNDU3NjI0LmN0LnNlbmRncmlkLm5ldC93Zi9vcGVuP3Vwbj1hQ29JVjdCWlpvbEJVak43YS0yQkhKMWI5ci0yQnBuUU1IR1cwUnhaV245cmJNVE1vRXZjTy0yQkxNZC0yQlI5TnBWSjJXbTkzNkVGVFdUY3lWS29iNU9lYTFiUXhkeVp5SGxPTXRtQzRkcld4OGstMkI3dUpZd0JjNHY2cEVtMmRWZHFtdmFtdmlYU09uZmVJOWd1RHNMU2RXRjk3bTFvWS0yRnRhZkpXR3J5cWJTZVh0Q1Y0MUFCQkpBZldNN09WTkRmMVdYbmpJMkFSeUktMkJIV3JyN2lQZFp4aHVCWHlrQ2xWY2R4OEtTM2NpcHVmOUVqdGhJT00tM0QiIGFsdD0iIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBib3JkZXI9IjAiIHN0eWxlPSJoZWlnaHQ6MXB4IWltcG9ydGFudDt3aWR0aDoxcHghaW1wb3J0YW50O2JvcmRlci13aWR0aDowIWltcG9ydGFudDttYXJnaW4tdG9wOjAhaW1wb3J0YW50O21hcmdpbi1ib3R0b206MCFpbXBvcnRhbnQ7bWFyZ2luLXJpZ2h0OjAhaW1wb3J0YW50O21hcmdpbi1sZWZ0OjAhaW1wb3J0YW50O3BhZGRpbmctdG9wOjAhaW1wb3J0YW50O3BhZGRpbmctYm90dG9tOjAhaW1wb3J0YW50O3BhZGRpbmctcmlnaHQ6MCFpbXBvcnRhbnQ7cGFkZGluZy1sZWZ0OjAhaW1wb3J0YW50Ij4NCg0KPC9kaXY-PGJyPjwvZGl2Pg0K"
+    }
+   }
+  ]
+ },
+ "sizeEstimate": 8757
+}
