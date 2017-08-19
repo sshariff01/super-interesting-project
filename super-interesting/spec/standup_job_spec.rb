@@ -1,5 +1,6 @@
 require "super-interesting"
 require "ostruct"
+require "base64"
 
 require_relative "spec_helper"
 
@@ -37,7 +38,18 @@ describe 'StandupJob' do
     expect(messages[2]['body']).not_to be_empty
   end
 
-  it "should convert the message body of each email into a human readable format"
+  it "should decode the message body of each email" do
+    messages = JSON.parse(File.read(fixture_path('standup_job/get_todays_standup_messages.json')))['messages']
+    expected_decoded_first_message = Base64.urlsafe_decode64(messages[0]['body'])
+    expected_decoded_second_message = Base64.urlsafe_decode64(messages[1]['body'])
+    expected_decoded_third_message = Base64.urlsafe_decode64(messages[2]['body'])
+
+    subject.decode(messages)
+    
+    expect(messages[0]['body']).to eq(expected_decoded_first_message)
+    expect(messages[1]['body']).to eq(expected_decoded_second_message)
+    expect(messages[2]['body']).to eq(expected_decoded_third_message)
+  end
   
   it "return an aggregate of the 'Interestings' section across all the messages"
 

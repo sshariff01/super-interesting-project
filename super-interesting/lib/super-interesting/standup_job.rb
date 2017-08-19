@@ -1,5 +1,6 @@
-require 'net/http'
-require 'json'
+require "net/http"
+require "json"
+require "base64"
 
 class StandupJob
 
@@ -16,6 +17,12 @@ class StandupJob
       message['body'] = JSON.parse(response.body)['payload']['parts'][1]['body']['data']
     end
     messages
+  end
+  
+  def decode(messages)
+    messages.each do |message|
+      message['body'] = Base64.urlsafe_decode64(message['body'])
+    end
   end
 
   private
