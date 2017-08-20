@@ -13,8 +13,11 @@ describe 'StandupJob' do
 
     expect(messages.length).to eq(3)
     expect(messages[0]['body']).not_to be_empty
+    expect(messages[0]['location']).to eq('Beaverton')
     expect(messages[1]['body']).not_to be_empty
+    expect(messages[1]['location']).to eq('Seattle')
     expect(messages[2]['body']).not_to be_empty
+    expect(messages[2]['location']).to eq('SF')
   end
 
   it "should parse out the 'Interestings' section for each messages" do

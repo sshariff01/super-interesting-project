@@ -24,7 +24,12 @@ class StandupJob
       response = http_client(get_message_uri(message['id'])).start do |http|
         http.request(get_contents_of_message(message['id']))
       end
+
       message['body'] = JSON.parse(response.body)['payload']['parts'][1]['body']['data']
+
+      JSON.parse(response.body)['payload']['headers'].each do |header|
+        message['location'] = header['value'][/.*\[Standup\]\[(.*)\]/, 1] if header['name'] == 'Subject'
+      end
     end
     messages
   end
