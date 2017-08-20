@@ -44,7 +44,7 @@ class StandupJob
 
   def parse_interestings_from(messages)
     messages.each do |message|
-      message['body'] = message['body'][/(\<h2\>Interestings\<\/h2\>[\S\s]*?)(\<h2\>Events\<\/h2\>|----------)/, 1].strip
+      message['body'] = message['body'][/\<h2\>Interestings\<\/h2\>\s*([\S\s]*?)(\<h2\>Events\<\/h2\>|----------)/, 1].strip
     end
   end
 
