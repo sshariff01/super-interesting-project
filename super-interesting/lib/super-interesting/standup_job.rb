@@ -42,13 +42,13 @@ class StandupJob
 
   def get_list_of_standup_messages
     request = Net::HTTP::Get.new(list_messages_uri)
-    request['Authorization'] = 'Bearer s0Me\B3Ar3rt0kenVaLu3'
+    request['Authorization'] = 'Bearer ya29.GlutBKBdDwY6swfLzZO5oKP67A4T29P_APAu9ZOncjDVfUz_rDGEz2So1Gw61sYJIW2QfE40YbL11VdK6qzt3AQENFIJf5fpoc2jzJqlTceP5cCZSil8jvV_PYwt'
     request
   end
   
   def get_contents_of_message(id)
     request = Net::HTTP::Get.new(get_message_uri(id))
-    request['Authorization'] = 'Bearer s0Me\B3Ar3rt0kenVaLu3'
+    request['Authorization'] = 'Bearer ya29.GlutBKBdDwY6swfLzZO5oKP67A4T29P_APAu9ZOncjDVfUz_rDGEz2So1Gw61sYJIW2QfE40YbL11VdK6qzt3AQENFIJf5fpoc2jzJqlTceP5cCZSil8jvV_PYwt'
     request
   end
 
