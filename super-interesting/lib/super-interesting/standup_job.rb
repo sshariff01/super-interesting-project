@@ -4,17 +4,20 @@ require "base64"
 
 class StandupJob
   
-  def run
-    messages = get_todays_standup_messages
+  def run(before:, after:)
+    messages = get_standup_messages(before: before, after: after)
     decode(messages)
     parse_interestings_from(messages)
     messages
   end
 
-  def get_todays_standup_messages
-    response = http_client(list_messages_uri).start do |http|
+  def get_standup_messages(before:, after:)
+    response = http_client(list_messages_uri(before: before, after: after)).start do |http|
       http.request(get_list_of_standup_messages)
     end
+
+    raise 'Request to Gmail API responded with 401 Unauthorized' if response.code == '401'
+    return [] if JSON.parse(response.body)['resultSizeEstimate'] == 0
 
     messages = JSON.parse(response.body)['messages']
     messages.each do |message|
@@ -60,9 +63,9 @@ class StandupJob
     end
   end
 
-  def list_messages_uri
+  def list_messages_uri(before: (Time.now + 3600*24).strftime("%Y/%m/%d"), after: (Time.now).strftime("%Y/%m/%d"))
     @list_messages_uri ||= begin
-      URI("https://www.googleapis.com/gmail/v1/users/shoabeshariff@gmail.com/messages?maxResults=3&q='subject:Standup'")
+      URI("https://www.googleapis.com/gmail/v1/users/shoabeshariff@gmail.com/messages?q='subject:Standup%20after:#{after}%20before:#{before}'")
     end
   end
   
