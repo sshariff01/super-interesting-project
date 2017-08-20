@@ -10,12 +10,6 @@ class StandupJob
     parse_interestings_from(messages)
     messages
   end
-  
-  def parse_interestings_from(messages)
-    messages.each do |message|
-      message['body'] = message['body'][/(\<h2\>Interestings\<\/h2\>[\S\s]*?)(\<h2\>Events\<\/h2\>|----------)/, 1].strip
-    end
-  end
 
   def get_todays_standup_messages
     response = http_client(list_messages_uri).start do |http|
@@ -32,13 +26,19 @@ class StandupJob
     messages
   end
   
+  private
+
   def decode(messages)
     messages.each do |message|
       message['body'] = Base64.urlsafe_decode64(message['body'])
     end
   end
 
-  private
+  def parse_interestings_from(messages)
+    messages.each do |message|
+      message['body'] = message['body'][/(\<h2\>Interestings\<\/h2\>[\S\s]*?)(\<h2\>Events\<\/h2\>|----------)/, 1].strip
+    end
+  end
 
   def get_list_of_standup_messages
     request = Net::HTTP::Get.new(list_messages_uri)
