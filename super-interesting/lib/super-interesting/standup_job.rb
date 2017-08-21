@@ -10,7 +10,7 @@ class StandupJob
   def run(before:, after:)
     messages = message_downloader.get_standup_messages(before: before, after: after)
     decoded_messages = message_decoder.decode(messages)
-    parsed_messages = category_parser.parse_out_category(category_to_parse_out: 'Interestings', messages: decoded_messages)
+    parsed_messages = category_parser.parse_out_category(messages: decoded_messages)
     parsed_messages
   end
 
