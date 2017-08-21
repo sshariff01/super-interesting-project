@@ -1,6 +1,5 @@
 require "net/http"
 require "json"
-require "base64"
 
 class MessageDownloader
 
@@ -28,12 +27,6 @@ class MessageDownloader
   end
 
   private
-
-  def parse_interestings_from(messages)
-    messages.each do |message|
-      message['body'] = message['body'][/\<h2\>Interestings\<\/h2\>\s*([\S\s]*?)(\<h2\>Events\<\/h2\>|----------)/, 1].strip
-    end
-  end
 
   def get_list_of_standup_messages
     request = Net::HTTP::Get.new(list_messages_uri)
