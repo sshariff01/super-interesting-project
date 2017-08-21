@@ -23,7 +23,7 @@ class InterestingsController < ApplicationController
   end
 
   def category_parser
-    CategoryParser.new
+    CategoryParser.new(category: 'Interestings')
   end
 
 end
