@@ -7,11 +7,13 @@ describe 'StandupJob' do
 
   let(:mock_message_downloader) { double('MessageDownloader') }
   let(:mock_message_decoder) { double('MessageDecoder') }
+  let(:mock_category_parser) { double('CategoryParser') }
 
   subject { StandupJob.new(
     message_downloader: mock_message_downloader,
-    message_decoder: mock_message_decoder
-    ) 
+    message_decoder: mock_message_decoder,
+    category_parser: mock_category_parser
+    )
   }
 
   before do
@@ -22,6 +24,10 @@ describe 'StandupJob' do
     expect(mock_message_decoder)
       .to receive(:decode)
       .once.and_return(JSON.parse(File.read(fixture_path('decoded_standup_messages.json'))))
+
+    expect(mock_category_parser)
+      .to receive(:parse_out_category)
+      .once.and_return(JSON.parse(File.read(fixture_path('standup_messages_with_only_interestings.json'))))
   end
 
   it "should return the 'Interestings' from each standup message" do
